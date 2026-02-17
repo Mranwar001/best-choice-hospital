@@ -64,12 +64,13 @@ export default function Header({ onBookAppointment, onMakePayment }) {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden text-gray-700"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'} text-2xl`}></i>
-          </button>
+<button
+  className="lg:hidden text-gray-700 absolute top-4 right-4"
+  onClick={() => setIsMenuOpen(!isMenuOpen)}
+>
+  <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'} text-2xl`}></i>
+</button>
+
         </div>
 
         {/* Mobile Menu */}
